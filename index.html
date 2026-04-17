@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fraud Detection Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- Load Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Fraud Detection Dashboard</h1>
+
+  <div class="form-container">
+    <label>Amount: <input id="amount" type="number"></label><br>
+    <label>Time: <input id="time" type="number"></label><br>
+    <button onclick="checkFraud()">Check</button>
+  </div>
+
+  <p id="output"></p>
+
+  <!-- Chart canvas -->
+  <canvas id="fraudChart" width="400" height="200"></canvas>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
